@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_Authentication</title>
+    <link rel="stylesheet" href="acc.style.css">
+</head>
+<body>
+
+  <h1>User Authentication</h1>
+
+    <!-- singnup form  -->
+    <form id="signup-form">
+      <h2>SignUp</h2>
+      <input type="email" id="signup-email" placeholder="Enter Email" required>
+      <input type="password" id="signup-password" placeholder="Enter Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="signup-error" style="color: red;"></p>
+
+    <!-- login form -->
+    <form id="login-form">
+      <h2>LogIn</h2>
+      <input type="email" id="login-email" placeholder="Enter Email" required>
+      <input type="password" id="login-password" placeholder="Enter Password" required>
+      <button type="submit">Log In</button>
+  </form>
+  <p id="login-error" style="color: red;"></p>
+  
+    
+    <script type="module" src="acc.script.js"></script>
+    
+ 
+</body>
+</html>
+
+
+
+
+<!-- tailwind installation
+step 1: go to the tailwind officail website
+step 2: do to docs and click in installation
+step: follow step of vite installation
+step: run tailwind installation commad : npm install tailwind  @tailwind -->

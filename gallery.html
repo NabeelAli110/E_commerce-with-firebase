@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Style Store Clone </title>
+</head>
+
+<body>
+
+    <!-- hearder section strat -->
+    <header>
+        <nav>
+            <div class="logo"><a href="main.html">
+                    STYLE<span>store</span>X</a>
+            </div>
+            <div class="menu">
+                <a href="main.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery </a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="">Login</a>
+            </div>
+        </nav>
+        <section class="m-text">
+            <i class="fa-solid fa-camera" id="camera" data-aos="fade-up"></i>
+            <h1 data-aos="fade-up">STYLE<span>store</span>X <br>Is presents new collections men and womens... Lets
+                buy from our store and
+                get discount..</h1>
+            <input type="text" name="" placeholder="Search here">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
+    </header>
+    <!-- header section end -->
+
+    <div class="gallery">
+        <h2>Our Gallery</h2>
+     </div>
+
+ <!-- footer section start  -->
+ <footer>
+    <div class="newsletteer">
+        <div>
+            <h2 data-aos="fade-up">Subscribe Our NewsLetter</h2>
+            <p data-aos="fade-up">We are a team of non-cynice who truly care for our work</p>
+        </div>
+        <div class="n-text">
+            <label for="">
+                <input type="text" placeholder="Enter your Email">
+                <button>Subscribe</button>
+            </label>
+        </div>
+    </div>
+    <div class="f-contact">
+        <div data-aos="fade-up">
+            <h2>Information</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptate.</p>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <div data-aos="fade-up">
+            <h2>Useful Links</h2>
+            <p><a href="">About Us</a></p>
+            <p><a href="">Gallery</a></p>
+            <p><a href="">Blog Post</a></p>
+            <p><a href="">Pricing Plans</a></p>
+        </div>
+        <div data-aos="fade-up">
+            <h2>Details</h2>
+            <p><a href="">About Us</a></p>
+            <p><a href="">Gallery</a></p>
+            <p><a href="">Blog Post</a></p>
+            <p><a href="">Pricing Plans</a></p>
+
+        </div>
+        <div data-aos="fade-up">
+            <h2>Help & Support</h2>
+            <p><a href="">About Us</a></p>
+            <p><a href="">Gallery</a></p>
+            <p><a href="">Blog Post</a></p>
+            <p><a href="">Pricing Plans</a></p>
+
+        </div>
+
+    </div>
+    <p class="last-pra" data-aos="fade-up">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod,
+        provident.<br> Lorem ipsum dolor sit amet.</p>
+
+</footer>
+<!-- footer section end  -->
+
+
+<!-- our all script section in there  -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!-- <script src="script.js"></script> -->
+<script type="text/javascript">
+    $('.portfolio-item').isotope({
+        // options
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+    });
+    $('.portfolio-menu ul li').click(function () {
+        $('.portfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+
+        var Selector = $(this).attr('data-filter');
+        $('.portfolio-item').isotope({
+            filter: Selector
+
+        });
+        return false;
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+<!-- our all script section is end here-->
+</body>
+
+</html>
